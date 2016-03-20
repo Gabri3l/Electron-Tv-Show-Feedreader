@@ -1,24 +1,32 @@
 <!doctype html>
-<!-- 
+<!--
 	Idea ottima sarebbe di avere notifiche salvate per show che escono fra quelli preferiti
-	e una lista di magnet links salvati da parte in modo che l'utente possa poi decdiere se 
+	e una lista di magnet links salvati da parte in modo che l'utente possa poi decdiere se
 	e quando scaricare se necessario
  -->
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tv Show Feedreader</title>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tv Show Feedreader</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <div class="top-bar"><h1>Tv Show Feedreader</h1></div>
-  <button>Find VPN</button>
-  <button>Add Show</button>
-  <button>Remove Show</button>
-  <button>Remove All</button>
-  <button>Start</button>
-  <button>Stop</button>
+	<div class="top-bar"><h1>Tv Show Feedreader</h1></div>
+    <div class="vpn-container">
+  		<input class="input-m disabled" tabindex="-1" type="text">
+		<button class="btn-m">Find VPN</button>
+  	</div>
+  	<div class="tv-show-container">
+  		<textarea name="tv-show-list" class="text-area-m"></textarea>
+  		<div class="btns-container">
+  			<button class="btn-m">Add Show</button>
+			<button class="btn-m">Remove Show</button>
+			<button class="btn-m">Remove All</button>
+  		</div>
+  	</div>
+  	<button class="btn-m">Start</button>
+  	<button class="btn-m">Stop</button>
 </body>
 </html>
