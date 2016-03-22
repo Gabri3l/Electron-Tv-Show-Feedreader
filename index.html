@@ -17,7 +17,15 @@
     <div class="vpn-container">
   		<input class="input-m disabled" tabindex="-1" type="text">
 		<button class="btn-m">Find VPN</button>
+		<button class="btn-m">Clear</button>
   	</div>
+  	<div class="vpn-container">
+	  	<div class="vpn-use-question">Are you going to use a VPN ?</div>
+	  	<select name="vpn-use" class="select-m">
+			<option value="Yes">Yes</option>
+			<option value="No">No</option>
+		</select>
+	</div>
   	<div class="tv-show-container">
   		<textarea name="tv-show-list" class="text-area-m"></textarea>
   		<div class="btns-container">
@@ -26,7 +34,17 @@
 			<button class="btn-m">Remove All</button>
   		</div>
   	</div>
-  	<button class="btn-m">Start</button>
-  	<button class="btn-m">Stop</button>
+  	<div class="tv-show-container">
+  		<div class="tv-show-quality-question">Which video quality do you prefer ?</div>
+	  	<select name="tv-video-quality" class="select-m">
+			<option value="480">420p</option>
+			<option value="720">720p</option>
+			<option value="1080">1080p</option>
+		</select>
+	</div>
+	<div class="app-activity-container">
+		<button class="btn-m">Start</button>
+		<button class="btn-m">Stop</button>
+	</div>
 </body>
 </html>
