@@ -20,8 +20,21 @@ $('#add-new-show').on('click', function (event) {
 	$('#add-show-modal').hide();
 });
 
-$('#remove-show').on('click', function () {
-	console.log('remove show');
+$('#remove-show').on('click', function() {
+	$('#remove-show-modal').show();
+});
+
+$('#delete-show-modal').on('click', function () {
+	event.preventDefault();
+	var showTitle = $('#remove-show-title').val();
+	var shows = $('#show-list').split(', ');
+	if ($('#show-list').val()) {
+		$('#show-list').append(', ' + showTitle.trim());
+	}else {
+		$('#show-list').append(showTitle.trim());
+	}
+	$('#new-show-title').val('');
+	$('#add-show-modal').hide();
 });
 
 $('#remove-all-shows').on('click', function () {
