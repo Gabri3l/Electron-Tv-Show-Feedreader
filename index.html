@@ -14,6 +14,7 @@
 	<title>Tv Show Feedreader</title>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="top-bar"><h1>Tv Show Feedreader</h1></div>
@@ -30,11 +31,11 @@
 		</select>
 	</div>
   	<div class="tv-show-container">
-  		<textarea name="tv-show-list" class="text-area-m"></textarea>
+  		<textarea id="show-list" name="tv-show-list" class="text-area-m disabled"></textarea>
   		<div class="btns-container">
-  			<button class="btn-m">Add Show</button>
-			<button class="btn-m">Remove Show</button>
-			<button class="btn-m">Remove All</button>
+  			<button id="add-show" class="btn-m">Add Show</button>
+			<button id="remove-show" class="btn-m">Remove Show</button>
+			<button id="remove-all-shows" class="btn-m">Remove All</button>
   		</div>
   	</div>
   	<div class="tv-show-container">
@@ -49,5 +50,16 @@
 		<button class="btn-m">Start</button>
 		<button class="btn-m">Stop</button>
 	</div>
+	<div class="modal" id="add-show-modal">
+		<div class="modal-content">
+			<span class="modal-close">x</span>
+			<h2 class="modal-title">Add a New Show</h2>
+			<form>
+				<input type="text" class="input-m" id="new-show-title">
+				<button id="add-new-show" class="btn-m">Add</button>
+			</form>
+		</div>
+	</div>
+	<script src="app.js"></script>
 </body>
 </html>
